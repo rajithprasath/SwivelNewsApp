@@ -11,13 +11,21 @@ User can Register and Logout in Profile tab
 
 # The app has following packages:
 1)model: It contains all the data accessing and manipulating components.
+
 2)di: Dependency providing classes using Dagger2.
+
 3)ui: View classes which contains user interactions
+
 4)viewmodel: Viewmodel classes which corresponding to the views
+
 5)utils: Utility classes.
+
 6)network: Its contains all the network related classes
+
 7)adapter: It contains recyclerview adapter classes
+
 8)database: Its contains Database Entity and Dao operations classes
+
 9)mapper: Mapper claases which maps data flows
 
 # Used components and frameworks
