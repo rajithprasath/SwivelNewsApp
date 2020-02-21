@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NewsApp-CodeTest</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_join_us">Join Us</string>
+    <string name="txt_welcome">Welcome To</string>
+    <string name="txt_hint_username">Email</string>
+    <string name="txt_hint_password">Password</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_register_success">Registration was successful</string>
+    <string name="txt_register_error">Email or Password not valid</string>
+    <string name="txt_registered_with">You registered with %1$s</string>
+</resources>

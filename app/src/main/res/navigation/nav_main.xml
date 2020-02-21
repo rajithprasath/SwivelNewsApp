@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragmentTopHeadLine">
+
+    
+    <fragment
+        android:id="@+id/fragmentTopHeadLine"
+        android:name="com.rajith.codetest.view.TopHeadlineFragment"
+        android:label="Top Headlines"
+        tools:layout="@layout/fragment_top_headline">
+        <action
+            android:id="@+id/action_fragmentTopHeadLine_to_fragmentNewsDetails"
+            app:destination="@id/fragmentNewsDetails" />
+        <argument
+            android:name="news"
+            app:argType="com.rajith.codetest.model.News"
+            app:nullable="false" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragmentNewsCategory"
+        android:name="com.rajith.codetest.view.NewsCategoryFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_news_category">
+        <action
+            android:id="@+id/action_fragmentNewsCategory_to_fragmentNewsDetails"
+            app:destination="@id/fragmentNewsDetails" />
+        <argument
+            android:name="news"
+            app:argType="com.rajith.codetest.model.News"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentNewsDetails"
+        android:name="com.rajith.codetest.view.NewsDetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_news_detail">
+
+        <argument
+            android:name="news"
+            app:argType="com.rajith.codetest.model.News" />
+
+        <argument
+            android:name="origin"
+            app:argType="com.rajith.codetest.util.Origin"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.rajith.codetest.view.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+
+    </fragment>
+
+</navigation>

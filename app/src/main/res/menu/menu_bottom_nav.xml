@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/fragmentTopHeadLine"
+        android:title="Top Headlines"
+        android:icon="@drawable/ic_headline"
+        app:showAsAction="always"
+        android:orderInCategory="1" />
+
+    <item android:id="@id/fragmentNewsCategory"
+        android:title="Category"
+        android:icon="@drawable/ic_custom"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2" />
+
+    <item android:id="@id/fragmentProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2" />
+
+</menu>
